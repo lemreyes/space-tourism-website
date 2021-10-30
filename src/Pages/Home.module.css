@@ -1,0 +1,130 @@
+.pageContainer {
+  min-height: 100vh;
+
+  background-image: url(../assets/home/background-home-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.mainContainer {
+  min-height: 80vh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+
+  margin-top: 0.5rem;
+  padding-inline: 1.5rem;
+}
+
+.articleContainer {
+  text-align: center;
+}
+
+.headLine {
+  font-family: var(--ff-sans-cond);
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+.smallWord {
+  display: block;
+  letter-spacing: 0.18rem;
+  margin-bottom: 1rem;
+}
+
+.bigWord {
+  display: block;
+
+  font-family: var(--ff-serif);
+  font-size: var(--fs-900);
+  color: var(--color-light);
+
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  display: block;
+
+  font-family: var(--ff-sans-normal);
+  line-height: 1.2rem;
+  color: var(--color-accent);
+}
+
+.buttonContainer {
+  align-self: center;
+  justify-self: center;
+}
+
+@media only screen and (min-width: 35em) {
+  .pageContainer {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+  
+    background-image: url(../assets/home/background-home-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom right;
+  }
+
+  .mainContainer {
+    margin-top: 8rem;
+    padding-inline: 14rem;
+  }
+
+  .buttonContainer {
+    align-self: center;
+    justify-self: center;
+    margin-top: 10rem;
+    padding-bottom: 3rem
+  }
+}
+
+@media only screen and (min-width: 83em) {
+  .pageContainer {
+    background-image: url(../assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+
+    padding-top: 3rem;
+  }
+
+  .mainContainer {
+    margin: auto;
+    min-height: 60vh;
+    width: 80%;
+  
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 6rem;
+  
+    margin-top: 14rem;
+    padding-inline: 1.5rem;
+  }
+
+  .articleContainer {
+    text-align: left;
+  }
+
+  .smallWord {
+    display: block;
+    letter-spacing: 0.18rem;
+    margin-bottom: 1rem;
+    font-size: var(--fs-700);
+  }
+  
+  .bigWord {
+    font-size: 15rem;
+  }
+
+  .text {
+    font-size: var(--fs-700);
+    line-height: 2rem;
+  }
+}

@@ -1,0 +1,111 @@
+.navContainer {
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  background-color: hsla(230, 35%, 7%, 0.05);
+  backdrop-filter: blur(1.5rem);
+
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  padding: 5rem 1rem 2rem 1rem;
+  width: 70%;
+  height: max(100vh, 100%);
+  transform: translateX(100%);
+  transition: transform 500ms ease-in-out;
+}
+
+.navContainer--display {
+  transform: translateX(0);
+}
+
+.navContainer a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+.numPrefix {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 35em) {
+  .navContainer {
+    position: static;
+
+    background-color: hsla(0, 0%, 100%, 0.05);
+    backdrop-filter: blur(1.5rem);
+
+    z-index: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+
+    padding: 0 0.5rem 0 0.5rem;
+    width: 70%;
+    height: inherit;
+    transform: none;
+    transition: none;
+  }
+
+  .navContainer a {
+    padding: 2rem 0 2rem 0;
+    font-size: var(--fs-200);
+    text-decoration: none;
+    color: var(--color-light);
+  }
+
+  .navContainer a:hover {
+    border-bottom: 2px solid hsl(0, 0, 59%);
+    z-index: 1;
+  }
+
+  .navContainer__active {
+    border-bottom: 2px solid var(--color-light);
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .navContainer {
+    position: static;
+
+    background-color: hsla(0, 0%, 100%, 0.05);
+    backdrop-filter: blur(1.5rem);
+
+    z-index: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    width: 50%;
+    height: inherit;
+    transform: none;
+    transition: none;
+
+    box-sizing: content-box;
+  }
+
+  .navContainer a {
+    padding: 2rem 0 2rem 0;
+    font-size: var(--fs-200);
+    text-decoration: none;
+    color: var(--color-light);
+  }
+
+  .navContainer a:hover {
+    border-bottom: 2px solid hsl(0, 0%, 59%);
+    z-index: 1;
+  }
+}

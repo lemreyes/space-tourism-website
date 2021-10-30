@@ -1,0 +1,69 @@
+.navSecondaryContainer {
+  width: 70%;
+  margin: auto;
+  padding: 1rem 0 1rem 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navSecondaryContainer a {
+  font-family: var(--ff-sans-cond);
+  color: var(--color-accent);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 0 1rem 0;
+}
+
+.navSecondaryContainer a:hover {
+  border-bottom: 2px solid hsl(0, 0%, 59%);
+}
+
+.navSecondary__active {
+  border-bottom: 2px solid var(--color-light);
+  color: var(--color-light);
+}
+
+/** page animations */
+.page {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+}
+
+.pageEnter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.pageEnterActive {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.pageExit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.pageExitActive {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+/** end of page animations */
+
+@media only screen and (min-width: 83em) {
+  .navSecondaryContainer {
+    width: 100%;
+    margin: initial;
+    padding: 1rem 0 1rem 0;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+}

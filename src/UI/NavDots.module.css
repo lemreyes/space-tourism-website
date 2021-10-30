@@ -1,0 +1,53 @@
+.dotsContainer {
+  border-top: 1px solid hsl(0, 0%, 59%);
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* style the button elements which are children of the a from <NavLink> component */
+.dotsContainer a > button {
+  width: 0.5rem;
+  aspect-ratio: 1;
+  border: 0;
+  background-color: hsl(0, 0%, 59%);
+  border-radius: 50%;
+}
+
+.dotsContainer__active > .dot {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.dot-indicators > *:hover,
+.dot-indicators > *:focus {
+  background-color: hsl(var(--clr-white) / 0.5);
+}
+
+.dot-indicators > [aria-selected="true"] {
+  background-color: hsl(var(--clr-white) / 1);
+}
+
+@media only screen and (min-width: 35em) {
+  .dotsContainer {
+    border-top: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 45em) {
+  .dotsContainer {
+    border-top: 0;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,46 @@
+.headerContainer {
+  position: relative;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer {
+  width: 40px;
+  aspect-ratio: 1;
+}
+
+.hbIcon {
+  z-index: 9000;
+  background-color: transparent;
+  border-width: 0;
+}
+
+.hbIcon:focus-visible {
+  outline: none;
+}
+
+@media only screen and (min-width: 35em) {
+  .headerContainer {
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hbIcon {
+    display: none;
+  }
+
+  .logoContainer {
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+
+}

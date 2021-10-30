@@ -1,0 +1,61 @@
+.navButtonContainer {
+  padding-top: 1rem;
+  margin: 1rem 0 1rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* style the button elements which are children of the <a> from <NavLink> component */
+.navButtonContainer a > button {
+  width: 3rem;
+  height: 3rem;
+  aspect-ratio: 1;
+  background-color: var(--color-dark);
+  border: 2px solid hsl(0, 0%, 59%);
+  border-radius: 50%;
+  font-size: var(--fs-700);
+  font-family: var(--ff-serif);
+
+  /* center the content of the button */
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+/* change color on hover */
+.navButtonContainer > a:hover .navButton:hover {
+  border-color: var(--color-light);
+}
+
+.navButtonContainer__active .navButton {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+@media only screen and (min-width: 35em) {
+  .navButtonContainer {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .navButtonContainer {
+    padding-top: 1rem;
+    margin: 1rem 0 1rem 0;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .navButtonContainer a > button {
+    width: 6rem;
+    height: 6rem;
+    font-size: 2.5rem;
+  }
+}
