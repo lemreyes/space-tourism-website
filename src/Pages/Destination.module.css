@@ -29,6 +29,20 @@
 
 .picContainer {
   justify-self: center;
+  width: 100%;
+
+  animation-name: planet_rotation;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+@keyframes planet_rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .mainImage {

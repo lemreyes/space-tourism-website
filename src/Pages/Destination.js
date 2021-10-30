@@ -19,7 +19,7 @@ import { navigateSubPages, getSubpageIndex } from "../Utility/helper";
 
 const DATA = require("../assets/data.json");
 
-const Destination = () => {
+const Destination = (props) => {
   const params = useParams();
   const pngImg = [imgMoonPng, imgMarsPng, imgEuropaPng, imgTitanPng];
   const webpImg = [imgMoonWebp, imgMarsWebp, imgEuropaWebp, imgTitanWebp];
@@ -48,14 +48,14 @@ const Destination = () => {
   });
 
   return (
-    <main className={classes.pageContainer}>
+    <main className={`page ${classes.pageContainer}`}>
       <Header />
       <h1 className={classes["pageContainer--headLine"]}>
         <span className={classes["pageContainer--number"]}>01</span> Pick your
         destination
       </h1>
       <div className={classes.mainContent}>
-        <div className={classes.picContainter}>
+        <div className={classes.picContainer}>
           <picture id={params.destinationName}>
             <source srcSet={webpImg[index]} type="image/webp" />
             <img

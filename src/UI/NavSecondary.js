@@ -1,12 +1,9 @@
 import React, { Fragment } from "react";
 import { NavLink, useRouteMatch, Route } from "react-router-dom";
-import { CSSTransition } from "react-transition-group";
 
 import Destination from "../Pages/Destination";
 
 import classes from "./NavSecondary.module.css";
-import page from "./NavSecondary.module.css";
-import "./page.css";
 
 const NavSecondary = () => {
   const { path } = useRouteMatch();
@@ -45,18 +42,7 @@ const NavSecondary = () => {
         path={`${path}/:destinationName`}
         exact
       >
-        {({ match }) => (
-          <CSSTransition
-            in={match != null}
-            timeout={300}
-            classNames="page"
-            unmountOnExit
-          >
-            <div className="page">
-              <Destination />
-            </div>
-          </CSSTransition>
-        )}
+        <Destination />
       </Route>
     </Fragment>
   );
