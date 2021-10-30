@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/lemreyes/space-tourism-website/tree/master](https://github.com/lemreyes/space-tourism-website/tree/master)
+- Live Site URL: [https://lemreyes.github.io/space-tourism-website/home](https://lemreyes.github.io/space-tourism-website/home)
 
 ## My process
 
