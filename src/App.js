@@ -1,12 +1,11 @@
 import React, { Fragment, Suspense } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 
-import Home from "./Pages/Home";
-
 /* lazy loading */
 const Crew = React.lazy(() => import('./Pages/Crew'));
 const Destination = React.lazy(() => import('./Pages/Destination'));
 const Technology = React.lazy(() => import('./Pages/Technology'));
+const Home = React.lazy(() => import('./Pages/Home'));
 
 
 function App() {
