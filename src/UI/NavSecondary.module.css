@@ -9,7 +9,7 @@
   justify-content: space-evenly;
 }
 
-.navSecondaryContainer a {
+.link {
   font-family: var(--ff-sans-cond);
   color: var(--color-accent);
   text-decoration: none;
@@ -17,7 +17,7 @@
   padding: 1rem 0 1rem 0;
 }
 
-.navSecondaryContainer a:hover {
+.link:hover {
   border-bottom: 2px solid hsl(0, 0%, 59%);
 }
 

@@ -10,25 +10,20 @@
 }
 
 /* style the button elements which are children of the a from <NavLink> component */
-.dotsContainer a > button {
-  width: 0.5rem;
+.navButton {
+  width: 1rem;
   aspect-ratio: 1;
   border: 0;
   background-color: hsl(0, 0%, 59%);
   border-radius: 50%;
 }
 
-.dotsContainer__active > .dot {
+.navButton__active {
   background-color: hsl(0, 0%, 100%);
 }
 
-.dot-indicators > *:hover,
-.dot-indicators > *:focus {
-  background-color: hsl(var(--clr-white) / 0.5);
-}
-
-.dot-indicators > [aria-selected="true"] {
-  background-color: hsl(var(--clr-white) / 1);
+.navButton:hover {
+  background-color: var(--color-light);
 }
 
 @media only screen and (min-width: 35em) {

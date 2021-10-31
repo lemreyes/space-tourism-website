@@ -13,25 +13,28 @@ const NavSecondary = () => {
       <nav className={classes.navSecondaryContainer}>
         <NavLink
           to={`/destination/moon/`}
-          className={classes.dotsContainer__active}
+          className={classes.link}
           activeClassName={classes.navSecondary__active}
         >
           Moon
         </NavLink>
         <NavLink
           to={`/destination/mars/`}
+          className={classes.link}
           activeClassName={classes.navSecondary__active}
         >
           Mars
         </NavLink>
         <NavLink
           to={`/destination/europa/`}
+          className={classes.link}
           activeClassName={classes.navSecondary__active}
         >
           Europa
         </NavLink>
         <NavLink
           to={`/destination/titan/`}
+          className={classes.link}
           activeClassName={classes.navSecondary__active}
         >
           Titan

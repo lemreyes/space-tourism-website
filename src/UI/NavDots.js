@@ -11,25 +11,29 @@ const NavDots = () => {
       <nav className={classes.dotsContainer}>
         <NavLink
           to={`/crew/commander/`}
-          activeClassName={classes.dotsContainer__active}
+          className={classes.navButton}
+          activeClassName={classes.navButton__active}
         >
           <button aria-label="Commander" className={classes.dot} />
         </NavLink>
         <NavLink
           to={`/crew/specialist/`}
-          activeClassName={classes.dotsContainer__active}
+          className={classes.navButton}
+          activeClassName={classes.navButton__active}
         >
           <button aria-label="Specialist" className={classes.dot} />
         </NavLink>
         <NavLink
           to={`/crew/pilot/`}
-          activeClassName={classes.dotsContainer__active}
+          className={classes.navButton}
+          activeClassName={classes.navButton__active}
         >
           <button aria-label="Pilot" className={classes.dot} />
         </NavLink>
         <NavLink
           to={`/crew/engr/`}
-          activeClassName={classes.dotsContainer__active}
+          className={classes.navButton}
+          activeClassName={classes.navButton__active}
         >
           <button aria-label="Flight Engineer" className={classes.dot} />
         </NavLink>
